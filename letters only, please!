@@ -1,4 +1,4 @@
 function removeChars(s) {
-  let reg = /[^a-zA-Z\s]/gi;
+  let reg = /[^a-z ]/ig;
   return s.replace(reg, '');
 }
