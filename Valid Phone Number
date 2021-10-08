@@ -1,0 +1,11 @@
+function validPhoneNumber(phoneNumber){
+  let format = '(xxx) xxx-xxxx',
+      newPhoneNumber = phoneNumber.replace(/\D+/g,'');
+      
+  for (let i = 0; i < newPhoneNumber.length; i++){
+    format = format.replace('x', newPhoneNumber[i]);
+  }
+  
+  if (format === phoneNumber) return true;
+  else return false;
+}
