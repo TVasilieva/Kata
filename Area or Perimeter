@@ -1,0 +1,8 @@
+const areaOrPerimeter = function(l , w) {
+  if(l == w) return Math.pow(l, 2);
+  else return 2 * (l + w);
+};
+
+const areaOrPerimeter = function(l , w) {
+  return (l == w) ? Math.pow(l, 2) : 2 * (l + w);
+};
