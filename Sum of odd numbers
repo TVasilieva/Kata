@@ -1,0 +1,22 @@
+|
+
+function rowSumOddNumbers(n) {
+	return Math.pow(n, 3)
+}
+
+||
+
+function rowSumOddNumbers(n) {
+
+  let sumOfOdd = 0, 
+      startOfRow = n * (n - 1) + 1,
+      endOfRow = n * (n + 1) + 1;
+  
+  for(let i = startOfRow; i < endOfRow; i++){
+    if(i%2 !== 0){
+    sumOfOdd += i;
+    } else sumOfOdd += 0;
+  }
+  
+  return sumOfOdd;
+}
